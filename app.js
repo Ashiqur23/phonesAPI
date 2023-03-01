@@ -64,13 +64,12 @@ document.getElementById('searchInput').addEventListener('keypress',function(even
         processSearch(10)
     }
 })
-
+// spinner
 const toggleSpinner = isLoading => {
     const loader = document.getElementById('loader');
     isLoading === true ? loader.classList.remove('d-none') :
     loader.classList.add('d-none')
 }
-
 // not the bet  way to load show all
 document.getElementById('btn-showAll').addEventListener('click', function(){
     processSearch()
